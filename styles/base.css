@@ -38,6 +38,10 @@ header h1 {
     margin: 30px;
 }
 
+header img {
+    border-radius: 50%;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -88,6 +92,7 @@ main section.card {
     display: block;
     border-radius: 10px;
     overflow: hidden;
+    font-weight: 500;
 }
 
 main section.card h2 {
@@ -121,6 +126,8 @@ main section.card {
     text-align: center;
 }
 
+/* FOOTER */
+
 footer {
     background-color: var(--background);
     color: var(--primary-text);
@@ -130,6 +137,14 @@ footer {
 footer p {
     margin: 0;
     padding: 10px 0;
+}
+
+footer .copyright {
+    font-size: 1.2em;
+}
+
+footer .last-mod {
+    color: var(--primary-light);
 }
 
 footer p:first-child {
