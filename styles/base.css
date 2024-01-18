@@ -34,13 +34,16 @@ header {
 }
 
 header span {
-    font-size: 3em;
-    margin: 30px;
+    font-size: 2em;
+    margin: 15px 5px;
     font-weight: 600;
 }
 
 header img {
     border-radius: 50%;
+    margin: 20px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 /* NAVIGATION */
