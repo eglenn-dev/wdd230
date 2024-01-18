@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: rgb(211, 208, 203);
+    --primary2-color: rgb(159, 177, 188);
+    --secondary-color: rgb(110, 136, 152);
+    --secondary2-color: rgb(46, 82, 102);
+    --accent-color: rgb(226, 192, 68);
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    margin-top: 1em;
+    grid-column: 2/3;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 2em 4em;
+    border-radius: 2em;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+/* MAIN */
+
+main {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#color-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 1em 2em;
+    column-gap: 1em;
+}
+
+#color-display .color-box {
+    height: 4em;
+    border-radius: 1em;
+}
+
+#primary {
+    background-color: var(--primary-color);
+}
+
+#primary2 {
+    background-color: var(--primary2-color);
+}
+
+#secondary {
+    background-color: var(--secondary-color);
+}
+
+#secondary2 {
+    background-color: var(--secondary2-color);
+}
+
+#accent {
+    background-color: var(--accent-color);
+}
