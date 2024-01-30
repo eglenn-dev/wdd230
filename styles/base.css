@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
+    /* Light Mode Colors */
     --red: #E63946;
     --primary-text: #F1FAEE;
     --primary-light: #A8DADC;
@@ -9,6 +10,16 @@
     --main-text: #1D3557;
     --left-right-padding: 20px;
     --top-bottom-padding: 20px;
+
+    /* Dark Mode Colors */
+    --dm-red: #7b2229;
+    --dm-primary-text: #F1FAEE;
+    --dm-primary-light: #b8e0e0;
+    --dm-primary: #194663;
+    --dm-background: #1D3557;
+    --dm-main-text: #e2ebf8;
+    --dm-left-right-padding: 20px;
+    --dm-top-bottom-padding: 20px;
 }
 
 html {
@@ -52,7 +63,15 @@ nav {
     background-color: var(--primary);
 }
 
+nav #menu {
+    color: var(--primary-text);
+    font-size: 2em;
+    text-align: center;
+    display: block;
+}
+
 nav ul {
+    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -61,7 +80,7 @@ nav ul {
 nav a {
     display: block;
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     padding: 0.5rem;
     text-decoration: none;
@@ -80,6 +99,7 @@ nav .active {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1em;
     padding: var(--left-right-padding);
 }
 
@@ -158,4 +178,51 @@ footer p:first-child {
 
 footer p:last-child {
     padding-bottom: 20px;
+}
+
+/* DARK MODE STYLES */
+
+body.dark-mode {
+    background-color: #333333;
+}
+
+.dark-mode header {
+    background-color: var(--dm-background);
+    color: var(--dm-primary-text);
+}
+
+.dark-mode nav {
+    background-color: var(--dm-primary);
+}
+
+.dark-mode h1 {
+    color: var(--dm-main-text);
+    border-bottom: 1px solid var(--dm-background);
+}
+
+.dark-mode main section.card {
+    border: 1px solid var(--dm-primary);
+    color: var(--dm-main-text);
+}
+
+.dark-mode main section.card a {
+    color: var(--dm-primary-light);
+}
+
+.dark-mode main section.card a:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.dark-mode main section.card h2 {
+    background-color: var(--dm-primary);
+    color: var(--dm-primary-text);
+}
+
+.dark-mode footer {
+    background-color: var(--dm-background);
+    color: var(--dm-primary-text);
+}
+
+.dark-mode footer .last-mod {
+    color: var(--dm-primary-light);
 }
