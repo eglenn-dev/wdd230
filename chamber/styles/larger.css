@@ -1,0 +1,102 @@
+/* Tablet and Medium Screens */
+@media only screen and (min-width: 30em) {
+
+    /* Header */
+
+    header {
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr;
+        align-items: center;
+    }
+
+    header div {
+        display: contents;
+        align-items: normal;
+        grid-column: 1/2;
+    }
+
+    header div #menu {
+        display: none;
+    }
+
+    header nav {
+        grid-column: 3/4;
+        display: block;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /* Main Section */
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+
+    .hero-background {
+        width: 40%;
+        height: 20em;
+    }
+
+    #event-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .weather-section {
+        text-align: center;
+    }
+
+    .weather-grid {
+        margin: auto;
+    }
+
+    #spotlight-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 20% 2fr 1fr 1fr;
+        text-align: left;
+        gap: 3em;
+    }
+
+    footer ul li {
+        margin-left: 0.5em;
+    }
+
+    footer img {
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    footer #site-map {
+        grid-column: 3/4;
+    }
+
+    footer #follow-us {
+        grid-column: 4/5;
+    }
+}
+
+/* Laptop & Larger Screens */
+@media only screen and (min-width: 64em) {
+
+    #event-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #spotlight-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

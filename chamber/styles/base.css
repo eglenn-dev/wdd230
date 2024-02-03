@@ -1,0 +1,273 @@
+/* Imports & Variables */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './animations.css';
+
+/* Defining color variables */
+:root {
+    /* Colors */
+    --primary-color: rgb(211, 208, 203);
+    --primary2-color: rgb(159, 177, 188);
+    --secondary-color: rgb(110, 136, 152);
+    --secondary2-color: rgb(46, 82, 102);
+    --accent-color: rgb(226, 192, 68);
+
+    /* Other */
+    --image-border-radius: 60px;
+    --card-border-radius: 50px;
+    --button-border-radius: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000000;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div a img {
+    padding: 1em;
+    cursor: pointer;
+}
+
+header div #menu {
+    padding: 1em;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+header nav {
+    display: none;
+    height: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin: 0.5em auto;
+}
+
+header nav ul li a {
+    padding: 0.75em 1em;
+    border-radius: var(--button-border-radius);
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.active-page {
+    background-color: var(--secondary2-color);
+}
+
+/* Main */
+
+main section {
+    height: fit-content;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    text-align: left;
+    height: fit-content;
+    background-color: var(--primary-color);
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+}
+
+.hero-content {
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    color: var(--secondary2-color);
+    font-weight: 500;
+}
+
+.hero-background {
+    margin: 1em;
+    height: 10em;
+    background-size: cover;
+    background-image: url('../images/downtown-yyc.webp');
+    background-position: center center;
+    border-radius: var(--image-border-radius);
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    text-align: left;
+}
+
+.hero-content mark {
+    background-color: var(--secondary2-color);
+    padding: 0.1em 0.25em;
+    border-radius: 8px;
+    color: white;
+}
+
+.call-to-action {
+    color: #000000;
+    background-color: var(--accent-color);
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    font-size: 1.25em;
+    border-radius: var(--button-border-radius);
+    text-decoration: none;
+    max-width: fit-content;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+/* Events */
+
+.events-section {
+    margin: 2em;
+}
+
+.events-section h2,
+.weather-section h2 {
+    color: var(--secondary2-color);
+}
+
+#event-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.event-button {
+    background-color: #FFFFFF;
+    padding: 0.75em;
+    border-radius: var(--button-border-radius);
+    color: var(--secondary2-color);
+    margin: auto;
+    text-decoration: none;
+}
+
+.card {
+    background-color: var(--primary2-color);
+    padding: 2em;
+    border-radius: var(--card-border-radius);
+}
+
+.card p {
+    margin-bottom: 1.5em;
+}
+
+/* Weather */
+
+.weather-section {
+    background-color: #dbdbdb;
+    margin: 2em 0 0 0;
+    padding: 2em;
+}
+
+.weather-section h2 {
+    margin-top: 0;
+}
+
+.weather-grid {
+    padding: 2em;
+    max-width: fit-content;
+}
+
+.weather-grid div p {
+    text-align: left;
+}
+
+.weather-grid img {
+    justify-self: right;
+}
+
+.weather-section div {
+    background-color: var(--secondary2-color);
+    color: #FFFFFF;
+    border-radius: var(--card-border-radius);
+}
+
+.weather-section .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Spotlight */
+
+.spotlight {
+    margin: 0;
+    padding: 2em;
+    background-color: var(--accent-color);
+}
+
+.spotlight h2 {
+    margin-top: 0;
+    color: var(--secondary2-color);
+}
+
+#spotlight-cards {
+    display: grid;
+    gap: 1em;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--secondary2-color);
+    color: #FFFFFF;
+    height: fit-content;
+    padding: 2em 0;
+}
+
+.footer-grid {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+}
+
+.last-mod {
+    text-align: center;
+}
