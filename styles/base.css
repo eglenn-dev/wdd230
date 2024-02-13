@@ -41,7 +41,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 header span {
@@ -103,6 +103,34 @@ main {
     padding: var(--left-right-padding);
 }
 
+.hero-image {
+    width: 100%;
+    position: relative;
+}
+
+.hero-image picture {
+    max-width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient(#FFFFFF, var(--primary));
+    border-radius: 5px;
+    box-shadow: 0 0 3em #000000;
+}
+
+.hero-label p {
+    font-weight: 400;
+    margin: 0.5em;
+}
+
 main h1 {
     text-align: center;
     color: var(--main-text);
@@ -149,6 +177,11 @@ main section.card ul li:last-child {
 
 main section.card {
     text-align: center;
+}
+
+.map {
+    width: 100%;
+    height: 20em;
 }
 
 /* FOOTER */

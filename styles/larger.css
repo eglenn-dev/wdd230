@@ -44,6 +44,16 @@
         column-gap: 30px;
     }
 
+    .hero-image {
+        grid-column: 1/3;
+    }
+
+    .hero-label {
+        font-size: 1.5em;
+        top: 25px;
+        left: 25px;
+    }
+
     main h1 {
         grid-column: 1/3;
         text-align: left;
@@ -54,4 +64,8 @@
         box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+    .map {
+        grid-column: 1/3;
+        height: 30em;
+    }
 }
