@@ -1,4 +1,4 @@
-/* Tablet and Medium Screens */
+/* Small Tablet Screens */
 @media only screen and (min-width: 30em) {
 
     /* Header */
@@ -33,18 +33,6 @@
     }
 
     /* Main Section */
-
-    .hero {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 0;
-    }
-
-    .hero-background {
-        width: 40%;
-        height: 20em;
-    }
 
     #event-cards {
         display: grid;
@@ -86,6 +74,23 @@
 
     footer #follow-us {
         grid-column: 4/5;
+    }
+}
+
+/* Large Tablet Screen */
+@media only screen and (min-width: 48em) {
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 60vh;
+    }
+
+    .hero-background {
+        width: 40%;
+        height: 90%;
     }
 }
 

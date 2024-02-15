@@ -1,0 +1,48 @@
+{
+    "spotlight": [
+        {
+            "title": "Something cool",
+            "companyName": "Company1",
+            "description": "lorem ipsum dolor sit amet, consectetur adip",
+            "imagePath": "#",
+            "website": ""
+        },
+        {
+            "title": "Something cool",
+            "companyName": "Company2",
+            "description": "lorem ipsum dolor sit amet, consectetur adip",
+            "website": "",
+            "imagePath": "#"
+        },
+        {
+            "title": "Something cool",
+            "companyName": "Company3",
+            "description": "lorem ipsum dolor sit amet, consectetur adip",
+            "website": "",
+            "imagePath": "#"
+        }
+    ],
+    "events": [
+        {
+            "title": "Community Event 1",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagePath": "#",
+            "linkText": "Learn More",
+            "link": "#"
+        },
+        {
+            "title": "Community Event 2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagePath": "#",
+            "linkText": "Learn More",
+            "link": "#"
+        },
+        {
+            "title": "Community Event 3",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagePath": "#",
+            "linkText": "Learn More",
+            "link": "#"
+        }
+    ]
+}
