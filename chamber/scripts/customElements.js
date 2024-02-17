@@ -1,3 +1,5 @@
+// Array of pages
+
 // Creating a class for a custom HTML element
 class loadHeader extends HTMLElement {
     constructor() {
@@ -5,6 +7,14 @@ class loadHeader extends HTMLElement {
         super();
     }
     connectedCallback() {
+        const pages = ['index.html', 'discover.html', 'directory.html', 'join.html'];
+        const activePage = ['', '', '', '']
+        pages.forEach(page => {
+            if (location.pathname.includes(page)) {
+                let index = pages.indexOf(page);
+                activePage[index] = 'active-page';
+            }
+        });
         // Detailing the HTML of this custom element. Making it a component to be used. 
         this.innerHTML = `
         <header>
@@ -14,10 +24,10 @@ class loadHeader extends HTMLElement {
             </div>
             <nav id="menu-nav">
                 <ul>
-                    <li><a class="active-page" href="#">Home</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a class="${activePage[0]}" href="./index.html">Home</a></li>
+                    <li><a class="${activePage[1]}" href="./discover.html">Discover</a></li>
+                    <li><a class="${activePage[2]}" href="#">Directory</a></li>
+                    <li><a class="${activePage[3]}" href="#">Join</a></li>
                 </ul>
             </nav>
         </header>
