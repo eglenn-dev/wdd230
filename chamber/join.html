@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calgary Chamber of Commerce</title>
+    <meta name="description" content="Visit the Camber of Commerce in Calgary. Find and support local businesses.">
+    <meta name="author" content="Ethan Glenn">
+    <!-- Resources -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- SEO -->
+    <meta property="og:url" content="https://eglenn-dev.github.io/wdd230/chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calgary Chamber of Commerce">
+    <meta property="og:description"
+        content="Visit the Camber of Commerce in Calgary. Find and support local businesses.">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Downtown_Calgary_2020-4.jpg/640px-Downtown_Calgary_2020-4.jpg">
+</head>
+
+<body>
+    <load-header></load-header>
+    <main class="fade-scale">
+        <div class="join-form">
+            <form method="get" action="./thankyou.html">
+                <h1>Join the Chamber</h1>
+                <p>Join over 1,200 businesses in the Calgary Chamber of Commerce. We are the city's largest
+                    and most diverse business organization, representing small, medium, and large businesses
+                    across all sectors of the economy. We are the city's largest and most diverse business
+                    organization, representing small, medium, and large businesses across all sectors of the
+                    economy.</p>
+                <div class="form-contents">
+                    <fieldset class="field-section">
+                        <legend>Personal Contact</legend>
+                        <label>First Name:
+                            <input id="f-name" type="text" name="f-name" placeholder="John" required>
+                        </label>
+                        <label>Last Name:
+                            <input id="l-name" type="text" name="l-name" placeholder="Smith" required>
+                        </label>
+                        <label>Title/Position:
+                            <input id="title" type="text" name="title" placeholder="Owner" required>
+                        </label>
+                        <label>Email:
+                            <input id="email" type="email" id="email" name="email" placeholder="example@email.com"
+                                required>
+                        </label>
+                        <label>Phone:
+                            <input id="phone" type="tel" id="phone" name="phone" placeholder="1234567890" required>
+                        </label>
+                    </fieldset>
+                    <fieldset class="field-section">
+                        <legend>Company Information</legend>
+                        <label>Company Name:
+                            <input id="company-name" type="text" name="company" placeholder="Your Company" required>
+                        </label>
+                        <label>Membership Level:
+                            <select id="membership-level" name="level">
+                                <option value="">Please Select</option>
+                                <option value="np">Non-profit</option>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                            </select>
+                        </label>
+                        <label>Company Phone:
+                            <input id="c-phone" type="tel" name="c-phone" placeholder="1234567890" required>
+                        </label>
+                        <label>Company Description:
+                            <input id="description" type="text" name="address" placeholder="Here at ..." required>
+                        </label>
+                        <label>Sector:
+                            <select id="sector" name="sector">
+                                <option value="">Please Select</option>
+                                <option value="retail">Retail</option>
+                                <option value="food">Food</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="tech">Tech</option>
+                                <option value="finance">Finance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+                        <input id="timestamp" type="hidden" name="timestamp" id="timestamp" value="">
+                    </fieldset>
+                    <input id="submit" type="submit" value="Join Now">
+                </div>
+            </form>
+            <div class="membership-levels">
+                <h1>Membership Levels</h1>
+                <h2>Bronze $60/month</h2>
+                <p>Our Bronze membership is perfect for small businesses and non-profits. It includes access to
+                    our networking events, business resources, and a listing in our directory.</p>
+                <h2>Silver $80/month</h2>
+                <p>Our Silver membership is perfect for medium-sized businesses. It includes access to our
+                    networking events, business resources, and a listing in our directory. It also includes
+                    access to our advocacy team.</p>
+                <h2>Gold $100/month</h2>
+                <p>Our Gold membership is perfect for large businesses. It includes access to our networking
+                    events, business resources, and a listing in our directory. It also includes access to our
+                    advocacy team and a seat on our board of directors.</p>
+                <h2>Non-Profit $0/month</h2>
+                <p>No membership fee is charged for non-profit organizations.</p>
+            </div>
+        </div>
+    </main>
+    <load-footer></load-footer>
+    <!-- Scripts -->
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/customElements.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/loadContent.js"></script>
+    <script src="./scripts/loadSpotlight.js"></script>
+    <script src="./scripts/lastModified.js"></script>
+</body>
+
+</html>
