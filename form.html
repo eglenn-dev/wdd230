@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Ethan Glenn</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for Ethan Glenn.">
+    <meta name="author" content="Ethan Glenn">
+    <link rel="canonical" href="https://eglenn-dev.github.io/wdd230">
+    <!-- Resources -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <!-- SEO -->
+    <meta property="og:url" content="https://eglenn-dev.github.io/wdd230">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ethan Glenn - WDD 230 - Web Frontend Development">
+    <meta property="og:description" content="This page provides links to all the projects in WDD 230 for Ethan Glenn.">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Downtown_Calgary_2020-4.jpg/640px-Downtown_Calgary_2020-4.jpg">
+</head>
+
+<body>
+    <header>
+        <img src="./images/profile.webp" alt="Ethan Glenn" width="150" height="150">
+        <span>Ethan Glenn</span>
+    </header>
+    <nav>
+        <div id="menu">&#9776;</div>
+        <ul id="nav-list">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a class="active" href="#">Form</a></li>
+            <li><a id="theme-box">Theme: Light</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="./record.html">
+            <fieldset>
+                <label>Username
+                    <input type="text" id="username" name="username" required>
+                </label>
+                <label>Password
+                    <input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" required>
+                </label>
+                <label>Confirm Password
+                    <input type="password" id="confirm-password" name="confirm-password" pattern="^[a-zA-Z0-9]{8,}$"
+                        required>
+                </label>
+                <label>Email
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
+                </label>
+                <label>Page Rating
+                    <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1"
+                        oninput="updateValue()">
+                </label>
+                <span id="currentValue">5</span>
+            </fieldset>
+            <input type="submit" value="Create Account">
+        </form>
+    </main>
+    <footer>
+        <p class="copyright">
+            &copy; <span id="footer-year"></span> Ethan Glenn
+        </p>
+        <p class="last-mod">
+            Last Updated: <span id="last-updated"></span>
+        </p>
+    </footer>
+    <script src="./scripts/checkPassowrds.js"></script>
+    <script src="./scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="./scripts/theme.js"></script>
+</body>
+
+</html>

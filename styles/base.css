@@ -259,3 +259,13 @@ body.dark-mode {
 .dark-mode footer .last-mod {
     color: var(--dm-primary-light);
 }
+
+.recorded {
+    height: 60vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
