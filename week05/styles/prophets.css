@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header h1 {
+    border-bottom: 2px solid #333333;
+}
+
+main {
+    width: 100%;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+section {
+    background-color: #f3e2d9;
+    color: #333333;
+    border-radius: 15px;
+    max-width: 400px;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+section img {
+    border-radius: 10px;
+}
