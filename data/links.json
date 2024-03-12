@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": 1,
+            "links": [
+                {
+                    "title": "Course Home Page",
+                    "url": "#"
+                },
+                {
+                    "title": "Chamber Site Plan",
+                    "url": "./week01/chamber-site-plan.html"
+                },
+                {
+                    "title": "Media Query Example",
+                    "url": "./week01/media-query.html"
+                }
+            ]
+        },
+        {
+            "week": 2,
+            "links": [
+                {
+                    "title": "Design Principles",
+                    "url": "./week02/design.html"
+                },
+                {
+                    "title": "Code Pen Hamburger Menu",
+                    "url": "https://byui-cse.github.io/wdd230-ww-course/week02/prepare-responsive-menu.html"
+                },
+                {
+                    "title": "BOM App",
+                    "url": "./week02/bom.html"
+                }
+            ]
+        },
+        {
+            "week": 3,
+            "links": [
+                {
+                    "title": "WebP",
+                    "url": "./week03/landscape.webp"
+                },
+                {
+                    "title": "Lazy Loading",
+                    "url": "./week03/lazyload.html"
+                },
+                {
+                    "title": "Responsive Images",
+                    "url": "./week03/responsive-images.html"
+                },
+                {
+                    "title": "BOM Local Storage",
+                    "url": "./week03/bom.html"
+                }
+            ]
+        },
+        {
+            "week": 4,
+            "links": [
+                {
+                    "title": "CodePen",
+                    "url": "https://codepen.io/eglenn-dev/pen/poYmxzj?editors=1100"
+                },
+                {
+                    "title": "CSS Combinators",
+                    "url": "./week04/images/CSS-Combinators.png"
+                },
+                {
+                    "title": "Table Build",
+                    "url": "./week04/tablebuild.html"
+                },
+                {
+                    "title": "Web Forms",
+                    "url": "./week04/forms/form.html"
+                }
+            ]
+        },
+        {
+            "week": 5,
+            "links": [
+                {
+                    "title": "Pseudo Elements",
+                    "url": "https://codepen.io/eglenn-dev/pen/PogZPPm?editors=1100"
+                },
+                {
+                    "title": "Ward Members JSON File",
+                    "url": "./week05/new-ward-members.json"
+                },
+                {
+                    "title": "Prophets Page",
+                    "url": "./week05/prophets.html"
+                },
+                {
+                    "title": "Weather API",
+                    "url": "./week05/weather.html"
+                }
+            ]
+        }
+    ]
+}
