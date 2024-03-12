@@ -4,7 +4,7 @@
             "week": 1,
             "links": [
                 {
-                    "title": "Course Home Page",
+                    "title": "Course Page",
                     "url": "#"
                 },
                 {
@@ -12,7 +12,7 @@
                     "url": "./week01/chamber-site-plan.html"
                 },
                 {
-                    "title": "Media Query Example",
+                    "title": "Media Query",
                     "url": "./week01/media-query.html"
                 }
             ]
@@ -25,7 +25,7 @@
                     "url": "./week02/design.html"
                 },
                 {
-                    "title": "Code Pen Hamburger Menu",
+                    "title": "Hamburger Menu",
                     "url": "https://byui-cse.github.io/wdd230-ww-course/week02/prepare-responsive-menu.html"
                 },
                 {
@@ -84,7 +84,7 @@
                     "url": "https://codepen.io/eglenn-dev/pen/PogZPPm?editors=1100"
                 },
                 {
-                    "title": "Ward Members JSON File",
+                    "title": "Ward Members JSON",
                     "url": "./week05/new-ward-members.json"
                 },
                 {
