@@ -1,5 +1,6 @@
 const weatherDescription = document.querySelector('#weather-description');
 const weatherTemp = document.querySelector('#temp');
+const weatherIcon = document.querySelector('#weather-icon');
 
 const apiKey = '41b040317d7c966d88f7697cb552aba4';
 const latitude = 43.817722402283884;
@@ -23,6 +24,7 @@ async function apiFetch() {
 function displayWeather(data) {
     weatherDescription.textContent = data.weather[0].description;
     weatherTemp.textContent = `${Math.round(data.main.temp)}°F`;
+    weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 }
 
 apiFetch().then(data => displayWeather(data));
