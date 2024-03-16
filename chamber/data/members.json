@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Sobeys Inc.",
+            "address": "1020 64 Ave NE, Calgary, AB T2E 7V8, Canada",
+            "phone": "+1 403-730-3500",
+            "website": "https://corporate.sobeys.com/contact-us",
+            "image": "./images/members/food.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Shaw Communications",
+            "address": "1800 9 Avenue SE, Calgary, AB T2G 0S6",
+            "phone": "+1 403-644-5890",
+            "website": "https://www.shaw.ca",
+            "image": "./images/members/phone.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "ATCO",
+            "address": "500 Centre Street S, Calgary, AB T2G 1W6",
+            "phone": "+1 403-292-6600",
+            "website": "https://www.atco.com",
+            "image": "./images/members/gas.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "University of Calgary",
+            "address": "2500 University Drive NW, Calgary, AB T2N 1N4",
+            "phone": "+1 403-220-3600",
+            "website": "https://www.ucalgary.ca",
+            "image": "./images/members/school.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Calgary Stampede",
+            "address": "1410 Olympic Way SE, Calgary, AB T2G 2W2",
+            "phone": "+1 403-262-8000",
+            "website": "https://www.calgarystampede.com",
+            "image": "./images/members/horse.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Studio Bell",
+            "address": "850 4 Street SE, Calgary, AB T2G 3E9",
+            "phone": "+1 403-541-0400",
+            "website": "https://studiobell.ca",
+            "image": "./images/members/music.webp",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Calgary Zoo",
+            "address": "1300 Zoo Road SE, Calgary, AB T2G 4C3",
+            "phone": "+1 403-237-1234",
+            "website": "https://www.calgaryzoo.com",
+            "image": "./images/members/zoo.webp",
+            "membershipLevel": "Bronze"
+        }
+    ]
+}

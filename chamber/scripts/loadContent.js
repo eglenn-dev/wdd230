@@ -1,5 +1,5 @@
 const getData = async () => {
-    const res = await fetch('./scripts/pageData.json');
+    const res = await fetch('./data/pageData.json');
     const data = await res.json();
     return data
 }

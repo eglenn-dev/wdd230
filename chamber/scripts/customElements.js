@@ -26,7 +26,7 @@ class loadHeader extends HTMLElement {
                 <ul>
                     <li><a class="${activePage[0]}" href="./index.html">Home</a></li>
                     <li><a class="${activePage[1]}" href="./discover.html">Discover</a></li>
-                    <li><a class="${activePage[2]}" href="">Directory</a></li>
+                    <li><a class="${activePage[2]}" href="./directory.html">Directory</a></li>
                     <li><a class="${activePage[3]}" href="./join.html">Join</a></li>
                 </ul>
             </nav>
