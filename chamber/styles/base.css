@@ -37,6 +37,11 @@ a:hover {
 
 header {
     width: 100%;
+    position: sticky;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    z-index: 100;
 }
 
 header div {
@@ -91,7 +96,6 @@ header nav ul li a {
 
 main section {
     height: fit-content;
-    width: 100%;
 }
 
 /* Hero */
