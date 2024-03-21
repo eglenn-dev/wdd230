@@ -196,6 +196,17 @@ main section {
     padding: 2em;
 }
 
+.forecast-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.forecast {
+    padding: 2em;
+    text-align: center;
+}
+
 .weather-section h2 {
     margin-top: 0;
 }
@@ -214,8 +225,8 @@ main section {
 }
 
 .weather-section div {
-    background-color: var(--secondary2-color);
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
     border-radius: var(--card-border-radius);
 }
 

@@ -40,6 +40,21 @@
         gap: 2em;
     }
 
+
+    .forecast-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1em;
+    }
+
+    .forecast {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: left;
+    }
+
     .weather-section {
         text-align: center;
     }
