@@ -1,6 +1,6 @@
 const apiKey = '41b040317d7c966d88f7697cb552aba4';
-const latitude = 51.1408312999787;
-const longitude = -114.23239125152102;
+const latitude = 51.044795772442214;
+const longitude = -114.07152894877746;
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 const forecastWeatherUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
@@ -60,7 +60,7 @@ function updateCurrentWeather(data) {
     const dayTemp = document.querySelector('#dayTemp');
     const dayHum = document.querySelector('#dayHum');
     const weatherImg = document.querySelector('#weather-image');
-    dayTemp.textContent = data.main.temp;
+    dayTemp.textContent = Math.floor(data.main.temp);
     dayHum.textContent = data.main.humidity;
     weatherImg.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 }
@@ -76,8 +76,8 @@ function updateForecast(data) {
     for (let i = 1; i < 4; i++) {
         const date = new Date(data[i].date);
         const day = date.toLocaleDateString('en-US', { weekday: 'long' });
-        const high = data[i].high;
-        const low = data[i].low;
+        const high = Math.floor(data[i].high);
+        const low = Math.floor(data[i].low);
 
         daysElements[i - 1].textContent = day;
         highElements[i - 1].textContent = high;
