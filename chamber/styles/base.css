@@ -143,10 +143,10 @@ main section {
 .call-to-action {
     color: #000000;
     background-color: var(--accent-color);
-    padding: 0.5em 1em;
+    padding: 1em;
     margin: 1em 0;
     font-size: 1.25em;
-    border-radius: var(--button-border-radius);
+    border-radius: 40px;
     text-decoration: none;
     max-width: fit-content;
     animation: bounce 3s ease-in-out infinite;

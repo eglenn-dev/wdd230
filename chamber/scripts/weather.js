@@ -57,11 +57,13 @@ async function getForecastWeather() {
 }
 
 function updateCurrentWeather(data) {
+    const dayDescription = document.getElementById('weather-description');
     const dayTemp = document.querySelector('#dayTemp');
     const dayHum = document.querySelector('#dayHum');
     const weatherImg = document.querySelector('#weather-image');
     dayTemp.textContent = Math.floor(data.main.temp);
     dayHum.textContent = data.main.humidity;
+    dayDescription.textContent = data.weather[0].description;
     weatherImg.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 }
 
