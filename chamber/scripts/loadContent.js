@@ -1,45 +1,32 @@
-const getData = async () => {
-    const res = await fetch('./data/pageData.json');
+async function getData() {
+    const res = await fetch('./data/members.json');
     const data = await res.json();
     return data
 }
 
-const loadEvents = async (data) => {
-    const cardSection = document.querySelector('#event-cards');
-    for (let i = 0; i < 3; i++) {
-        let event = data[i];
+function displayRandomMembers(members) {
+    let goldAndSilverMembers = members.filter(member => member.membershipLevel === "Gold" || member.membershipLevel === "Silver");
+    for (let i = goldAndSilverMembers.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [goldAndSilverMembers[i], goldAndSilverMembers[j]] = [goldAndSilverMembers[j], goldAndSilverMembers[i]];
+    }
+    const randomThreeMembers = goldAndSilverMembers.slice(0, 3);
+    const spotlightTarget = document.querySelector('#spotlight-cards');
+    randomThreeMembers.forEach(item => {
         const card = `
-            <img src="${event.imagePath}" alt="${event.title}" width="50" height="50">
-            <h3>${event.title}</h3>
-            <p>${event.description}</p>
-            <a class="event-button" target="_blank" href="${event.link}">${event.linkText}</a>
+            <img src="${item.image}" alt="${item.name}" width="100" height="100">
+            <h3>${item.name}</h3>
+            <p>${item.address}</p>
+            <a class="event-button" target="_blank" href="${item.website}">About ${item.name}</a>
         `
         newDiv = document.createElement('div');
         newDiv.classList.add('card');
         newDiv.innerHTML = card;
-        cardSection.appendChild(newDiv);
-    }
-}
-
-const loadSpotlight = async (data) => {
-    const cardSection = document.querySelector('#spotlight-cards');
-    for (let i = 0; i < 3; i++) {
-        let item = data[i];
-        const card = `
-            <img src="${item.imagePath}" alt="${item.companyName}" width="50" height="50">
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
-            <a class="event-button" target="_blank" href="${item.link}">About ${item.companyName}</a>
-        `
-        newDiv = document.createElement('div');
-        newDiv.classList.add('card');
-        newDiv.innerHTML = card;
-        cardSection.appendChild(newDiv);
-    }
+        spotlightTarget.appendChild(newDiv);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', async function () {
     const data = await getData();
-    await loadEvents(data.events);
-    await loadSpotlight(data.spotlight);
+    displayRandomMembers(data.members);
 });

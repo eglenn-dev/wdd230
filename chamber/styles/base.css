@@ -149,6 +149,9 @@ main section {
     border-radius: 40px;
     text-decoration: none;
     max-width: fit-content;
+}
+
+.bounce {
     animation: bounce 3s ease-in-out infinite;
 }
 
@@ -571,4 +574,51 @@ footer ul li a {
 
 .hidden {
     display: none;
+}
+
+/* Popup Styles */
+#popup {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    width: 80%;
+    padding: 1em;
+    border-radius: var(--card-border-radius);
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#close-popup {
+    align-self: flex-start;
+    cursor: pointer;
+    font-size: 3em;
+    margin: 0.1em 0.5em;
+}
+
+#popup-content h2 {
+    padding: 0;
+    margin: 0;
+    color: var(--secondary2-color);
+    font-size: 2em;
+}
+
+#popup-content p {
+    padding: 1em;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 60%;
 }

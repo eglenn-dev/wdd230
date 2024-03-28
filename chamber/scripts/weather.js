@@ -41,7 +41,6 @@ async function getForecastWeather() {
         const highsAndLows = Object.entries(groupedByDate).map(([date, entries]) => {
             const temps = entries.map(entry => entry.main.temp);
             const icon = entries[0].weather[0].icon;
-            // debugger;
             return {
                 date,
                 high: Math.max(...temps).toFixed(2),

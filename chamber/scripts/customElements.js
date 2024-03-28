@@ -35,6 +35,58 @@ class loadHeader extends HTMLElement {
     }
 }
 
+function createCalendarUrl(eventDetails) {
+    const { eventName, startDate, endDate, details, location } = eventDetails;
+    const start = startDate.toISOString().replace(/-|:|\.\d\d\d/g, '');
+    const end = endDate.toISOString().replace(/-|:|\.\d\d\d/g, '');
+    const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventName)}&dates=${start}/${end}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}&sf=true&output=xml`;
+    return url;
+}
+
+function getNextWednesday() {
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const daysUntilNextWednesday = (3 - dayOfWeek + 7) % 7 || 7;
+    now.setDate(now.getDate() + daysUntilNextWednesday);
+    return now;
+}
+
+class loadPopup extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        const nextWednesday = getNextWednesday();
+        const eventDetails = {
+            eventName: 'Calgary Chamber Meet and Greet',
+            startDate: new Date(nextWednesday.setHours(19, 0, 0)),
+            endDate: new Date(nextWednesday.setHours(21, 0, 0)),
+            details: 'For details, link here: https://eglenn-dev.github.io/wdd230/chamber/',
+            location: '123 Street, Calgary AB',
+        };
+        const newCalLink = createCalendarUrl(eventDetails)
+        this.innerHTML = `
+        <div id="popup" class="hidden">
+            <div id="popup-content">
+                <span id="close-popup">&times;</span>
+                <h2>Weekly Meet and Greet</h2>
+                <p>Come and join us at our weekly meet and greet! It is held every Wednesday at 7:00 PM. Come and meet with other business owners and chamber members in Calgary!</p>
+                <a class="call-to-action" href="${newCalLink}" target="_blank" style="padding: 1em;"><b>Add to Calendar</b></a>
+            </div>
+        </div>
+      `;
+        const closeButton = document.querySelector('#close-popup');
+        closeButton.addEventListener('click', () => {
+            this.style.display = 'none';
+        });
+        const dayOfWeek = new Date().getDay();
+        if (dayOfWeek === 1 || dayOfWeek === 2 || dayOfWeek === 3) {
+            const popupElement = document.querySelector('#popup');
+            popupElement.classList.remove('hidden');
+        }
+    }
+}
+
 // Creating a class for a custom HTML element
 class loadFooter extends HTMLElement {
     constructor() {
@@ -72,4 +124,5 @@ class loadFooter extends HTMLElement {
 
 // Defining the custom element to be used in HTML docs
 window.customElements.define("load-header", loadHeader);
+window.customElements.define("load-popup", loadPopup);
 window.customElements.define("load-footer", loadFooter);
