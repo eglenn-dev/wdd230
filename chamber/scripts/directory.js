@@ -16,11 +16,11 @@ function displayGridMembers(members) {
     members.forEach(member => {
         const div = document.createElement('div');
         div.innerHTML = `
-            <img src="${member.image}" alt="${member.name}">
+            <img src="${member.image}" alt="${member.name}" loading="lazy">
             <h2>${member.name}</h2>
             <p>${member.address}</p>
             <p>${member.phone}</p>
-            <a href="${member.website}">${member.website}</a>
+            <a href="${member.website}" target="_blank">${member.website}</a>
         `;
         section.appendChild(div);
     });
@@ -52,6 +52,7 @@ function displayListMembers(members) {
             if (text === member.website) {
                 const a = document.createElement('a');
                 a.href = text;
+                a.setAttribute('target', '_blank');
                 a.textContent = text;
                 td.appendChild(a);
             } else {

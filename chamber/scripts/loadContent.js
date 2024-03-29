@@ -14,7 +14,7 @@ function displayRandomMembers(members) {
     const spotlightTarget = document.querySelector('#spotlight-cards');
     randomThreeMembers.forEach(item => {
         const card = `
-            <img src="${item.image}" alt="${item.name}" width="100" height="100">
+            <img src="${item.image}" alt="${item.name}" width="100" height="100" loading="lazy">
             <h3>${item.name}</h3>
             <p>${item.address}</p>
             <a class="event-button" target="_blank" href="${item.website}">About ${item.name}</a>

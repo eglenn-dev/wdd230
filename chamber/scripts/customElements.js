@@ -19,7 +19,7 @@ class loadHeader extends HTMLElement {
         this.innerHTML = `
         <header>
             <div>
-                <a href="/chamber"><img src="./images/logo.png" width="60" height="60" alt="Calgary Chamber Logo"></a>
+                <a href="/chamber"><img src="./images/logo.webp" width="50" height="50" alt="Calgary Chamber Logo"></a>
                 <div id="menu">&#9776;</div>
             </div>
             <nav id="menu-nav">
@@ -98,7 +98,7 @@ class loadFooter extends HTMLElement {
         this.innerHTML = `
         <footer>
             <div class="footer-grid">
-                <img src="" alt="" width="100" height="100">
+                <img src="./images/logo.webp" alt="Logo" loading="lazy" width="100" height="100">
                 <div id="site-map">
                     <h3>Contact Information</h3>
                     <ul>

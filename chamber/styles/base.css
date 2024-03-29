@@ -51,7 +51,7 @@ header div {
 }
 
 header div a img {
-    padding: 1em;
+    padding: 0.5em 1em;
     cursor: pointer;
 }
 
@@ -82,13 +82,14 @@ header nav ul li {
 header nav ul li a {
     padding: 0.75em 1em;
     border-radius: var(--button-border-radius);
-    background-color: var(--secondary-color);
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: #000000;
     text-decoration: none;
     font-weight: 500;
 }
 
 .active-page {
+    color: #ffffff;
     background-color: var(--secondary2-color);
 }
 
@@ -176,9 +177,10 @@ main section {
     background-color: #FFFFFF;
     padding: 0.75em;
     border-radius: var(--button-border-radius);
-    color: var(--secondary2-color);
+    color: #000000;
     margin: auto;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .card {
