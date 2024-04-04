@@ -1,7 +1,29 @@
-async function getData() {
+async function getMemberData() {
     const res = await fetch('./data/members.json');
     const data = await res.json();
     return data
+}
+
+async function getCalendarData() {
+    const res = await fetch('./data/calendar.json');
+    const data = await res.json();
+    return data
+}
+
+function displayCalendarEvents(events) {
+    const eventTarget = document.querySelector('#event-cards');
+    events.forEach(event => {
+        const card = `
+            <h3>${event.title}</h3>
+            <p>${event.description}</p>
+            <p class="bold">Details: ${event.date}</p>
+        `
+        newDiv = document.createElement('div');
+        newDiv.classList.add('card');
+        newDiv.innerHTML = card;
+        eventTarget.appendChild(newDiv);
+    });
+
 }
 
 function displayRandomMembers(members) {
@@ -27,6 +49,8 @@ function displayRandomMembers(members) {
 }
 
 document.addEventListener('DOMContentLoaded', async function () {
-    const data = await getData();
-    displayRandomMembers(data.members);
+    const calendarData = await getCalendarData();
+    displayCalendarEvents(calendarData.events);
+    const memberData = await getMemberData();
+    displayRandomMembers(memberData.members);
 });

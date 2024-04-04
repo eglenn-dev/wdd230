@@ -1,0 +1,19 @@
+{
+    "events": [
+        {
+            "title": "Weekly Chamber Meeting",
+            "description": "Come and meet with members and leaders of the Calgary Chamber of Commerce.  This is a great opportunity to network and learn about the latest business trends in Calgary. It a great way to meet and make strategic business relationships.",
+            "date": "Wednesday 7:00 PM - 9:00 PM Weekly"
+        },
+        {
+            "title": "Business Luncheon",
+            "description": "Join us for a delicious lunch and engaging discussions on various business topics. This event is open to all Chamber members and provides a great opportunity to network and learn from industry experts.",
+            "date": "Friday 12:00 PM - 2:00 PM Monthly"
+        },
+        {
+            "title": "Entrepreneur Workshop",
+            "description": "Calling all aspiring entrepreneurs! Join us for an interactive workshop where you'll learn valuable skills and insights to help you succeed in your business ventures. Don't miss this chance to connect with like-minded individuals and gain practical knowledge.",
+            "date": "Saturday 10:00 AM - 12:00 PM Bi-weekly"
+        }
+    ]
+}
