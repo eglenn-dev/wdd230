@@ -159,9 +159,15 @@ main section {
 
 .events-section {
     margin: 2em;
+    background-color: rgba(46, 82, 102, 0.2);
+    padding: 1em 2em;
+    border-radius: var(--card-border-radius);
 }
 
-.events-section h2,
+.events-section h2 {
+    color: var(--secondary2-color);
+}
+
 .weather-section h2 {
     color: var(--secondary2-color);
 }
@@ -172,24 +178,24 @@ main section {
     gap: 1em;
 }
 
-.event-button {
-    background-color: #FFFFFF;
-    padding: 0.75em;
-    border-radius: var(--button-border-radius);
-    color: #000000;
-    margin: auto;
-    text-decoration: none;
-    font-weight: 500;
-}
-
 .card {
-    background-color: var(--primary2-color);
+    background-color: rgb(77, 103, 119);
     padding: 2em;
     border-radius: var(--card-border-radius);
+    color: #FFFFFF;
+}
+
+.card h3 {
+    font-size: 1.5em;
 }
 
 .card p {
     margin-bottom: 1.5em;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600;
 }
 
 /* Weather */
@@ -263,6 +269,24 @@ main section {
 #spotlight-cards {
     display: grid;
     gap: 1em;
+}
+
+#spotlight-cards .card img {
+    filter: invert(100%);
+}
+
+.event-button1 {
+    color: var(--secondary2-color);
+    border-radius: 10px;
+}
+
+.event-button {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.event-button:hover {
+    background-color: var(--secondary-color);
 }
 
 /* Discover */
@@ -451,6 +475,10 @@ footer {
     text-align: center;
 }
 
+.footer-grid img {
+    margin: 0 auto;
+}
+
 footer ul {
     padding: 0;
     margin: 0;
@@ -514,7 +542,7 @@ footer ul li a {
     margin: 0.5em;
     width: 50px;
     border-radius: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary2-color);
     color: #FFFFFF;
     cursor: pointer;
 }
