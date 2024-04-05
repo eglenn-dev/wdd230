@@ -19,7 +19,7 @@ class loadHeader extends HTMLElement {
         this.innerHTML = `
         <header>
             <div>
-                <a href="wdd230/chamber"><img src="./images/logo.webp" width="50" height="50" alt="Calgary Chamber Logo"></a>
+                <a href="/wdd230/chamber"><img src="./images/logo.webp" width="50" height="50" alt="Calgary Chamber Logo"></a>
                 <div id="menu">&#9776;</div>
             </div>
             <nav id="menu-nav">
