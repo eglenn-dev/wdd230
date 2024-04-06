@@ -16,8 +16,8 @@ function displayCalendarEvents(events) {
         const card = `
             <h3>${event.title}</h3>
             <p>${event.description}</p>
-            <p class="bold">Details: ${event.date}</p>
-        `
+            <p class="bold">${event.date}</p>
+        `;
         newDiv = document.createElement('div');
         newDiv.classList.add('card');
         newDiv.innerHTML = card;
@@ -40,7 +40,7 @@ function displayRandomMembers(members) {
             <h3>${item.name}</h3>
             <p>${item.address}</p>
             <a class="event-button" target="_blank" href="${item.website}">About ${item.name}</a>
-        `
+        `;
         newDiv = document.createElement('div');
         newDiv.classList.add('card');
         newDiv.innerHTML = card;
